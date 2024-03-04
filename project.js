@@ -56,6 +56,35 @@ btn.addEventListener('click', function() {
 })
 
 
+// Modal Scripts
+
+// variables
+
+let openBtn = document.getElementById('open-btn');
+let mainContent = document.getElementById('main-content');
+let closeBtn = document.getElementById('close-btn');
+
+
+//Event Listeners
+
+openBtn.addEventListener('click', function(){
+
+    mainContent.style.display = 'block';
+
+});
+
+closeBtn.addEventListener('click', function(){
+
+    mainContent.style.display = 'none';
+
+});
+
+window.addEventListener('click', function(e){ 
+
+    if (e.target === mainContent) {
+        mainContent.style.display ='none';
+    }
+});
 
 
 
