@@ -47,7 +47,6 @@ const quotes =[{
 
 /* Random Quotes Selector */
 
-
 btn.addEventListener('click', function() {
 
     let random = Math.floor(Math.random() * quotes.length);
